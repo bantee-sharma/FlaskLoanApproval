@@ -4,7 +4,6 @@ import pickle
 model_file = open("classifier.pkl", "rb")
 model = pickle.load(model_file)
 
-
 app = Flask(__name__)
 
 @app.route("/")
