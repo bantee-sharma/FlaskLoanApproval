@@ -1,4 +1,5 @@
-FROM python:3.12.5-slim-bullseye 
+FROM python:3.12.5-slim
+
 
 WORKDIR /docker
 
