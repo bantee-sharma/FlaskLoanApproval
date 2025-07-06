@@ -1,5 +1,7 @@
 from flask import Flask,request
 
+# flask --app hello.py run
+
 app = Flask(__name__)
 
 @app.route("/")
@@ -10,3 +12,5 @@ def hello():
 def flask():
     if request.method == "GET":
         return "Insurance Prediction"
+    else:
+        return "We are gonna make Prediction"
