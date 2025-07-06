@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask,request
 
 app = Flask(__name__)
 
@@ -6,6 +6,7 @@ app = Flask(__name__)
 def hello():
     return "Hello World"
 
-@app.route("/predict")
+@app.route("/predict",methods = ["GET","POST"])
 def flask():
-    return "Welcome to FLASK"
+    if request.method == "GET":
+        return "Insurance Prediction"
